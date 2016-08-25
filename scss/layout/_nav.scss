@@ -1,0 +1,112 @@
+//Nav Styles ***********************************************************************
+.main-nav {
+    @media #{$tablet} {
+        text-align: center;
+    }
+    @media #{$desktop} {
+        width: 1024px;
+        background: none;
+        min-height: 30px;
+        padding: 10px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.nav {
+    list-style-type: none;
+    @extend %center-margin;
+    padding-left: 0px;
+    @media #{$desktop} {
+        display: flex;
+        justify-content: space-around;
+    }
+    .name {
+    @media #{$tablet} {
+        display: block;
+        margin-right: auto; 
+    }
+    @media #{$desktop} {
+        display: block;
+        margin-right: auto;
+        }
+    }
+}   
+
+.nav li {
+    @media #{$desktop} {
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+.link {
+    @media #{$tablet} {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-nav1 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+.footer-nav2 {
+    display: none;
+}
+
+#name2 {
+    text-align: left;
+}
+
+.nav2 {
+    list-style-type: none;
+}
+
+
+@media screen and (min-width: 768px){
+    .footer-nav1 {
+        display: none;
+    }
+    
+    .footer-nav2 {
+        width: 768px;
+        background: none;
+        min-height: 30px;
+        padding: 10px;
+        text-align: center;
+        display: inherit;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav2{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .nav2 li{
+        padding: 5px 10px 10px 10px;
+    }
+
+    .name2{
+        display: block;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-nav2 {
+        width: 1024px;
+    }
+}

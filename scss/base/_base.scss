@@ -1,0 +1,14 @@
+%center-margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    text-align: center;
+    @media #{$tablet} {
+        body {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

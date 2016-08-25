@@ -1,0 +1,26 @@
+//Header Styles ***********************************************************************
+
+#profile-image{
+    width: 80%;   
+}
+
+header {
+    @media #{$tablet} {
+        display: flex;
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row-reverse;
+    }
+    @media #{$desktop} {
+        display: flex;
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#intro-text{
+    width: 60%;
+    @extend %center-margin;
+}

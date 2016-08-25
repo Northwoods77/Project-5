@@ -1,0 +1,61 @@
+//Body Styles ***********************************************************************
+
+//Site Card Styles ***********************************************************************
+.card-container {
+    @media #{$tablet} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media #{$desktop} {
+        width: 1024px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.site-card {
+    @media #{$tablet} {
+        text-align: center;
+        margin: 0;
+        width: 46%;
+        padding: .5%;
+    }
+    @media #{$desktop} {
+        text-align: center;
+        width: 30%;
+    }
+    img {
+    width: 90%;
+    padding: 2%;
+    }
+}
+
+
+
+//Site Contact Styles ***********************************************************************
+.contact-text {
+    @media #{$tablet} {
+        width: 60%;
+    }
+}
+
+.contact {
+    padding-top: 25px;
+    width: 60%;
+    @extend %center-margin;
+    @media #{$tablet} {
+        margin-left: auto;
+        margin-right: auto;
+        clear: left;
+    }
+    @media #{$tablet} {
+       clear: left; 
+    }
+}
