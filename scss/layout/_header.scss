@@ -1,18 +1,19 @@
 //Header Styles ***********************************************************************
 
 #profile-image{
-    width: 80%;   
+    width: 80%;
+    @include rounded;
 }
 
 header {
-    @media #{$tablet} {
+    @include tablet {
         display: flex;
         width: 768px;
         margin-left: auto;
         margin-right: auto;
         flex-direction: row-reverse;
     }
-    @media #{$desktop} {
+    @include desktop {
         display: flex;
         width: 1024px;
         margin-left: auto;

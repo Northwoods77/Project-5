@@ -1,2 +1,24 @@
-$tablet: "screen and (min-width: 768px)";
-$desktop: "screen and (min-width: 1024px)";
+//Media Query Mixins ***********************************************************************
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+//Rounded Picture Corners Mixin ***********************************************************************
+
+$rounded-corners: 5px;
+
+@mixin rounded {
+    border-radius: #{$rounded-corners};
+}

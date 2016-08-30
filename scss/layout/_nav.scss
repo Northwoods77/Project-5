@@ -1,9 +1,9 @@
 //Nav Styles ***********************************************************************
 .main-nav {
-    @media #{$tablet} {
+    @include tablet {
         text-align: center;
     }
-    @media #{$desktop} {
+    @include desktop {
         width: 1024px;
         background: none;
         min-height: 30px;
@@ -18,16 +18,16 @@
     list-style-type: none;
     @extend %center-margin;
     padding-left: 0px;
-    @media #{$desktop} {
+    @include desktop {
         display: flex;
         justify-content: space-around;
     }
     .name {
-    @media #{$tablet} {
+    @include tablet {
         display: block;
         margin-right: auto; 
     }
-    @media #{$desktop} {
+    @include desktop {
         display: block;
         margin-right: auto;
         }
@@ -35,13 +35,13 @@
 }   
 
 .nav li {
-    @media #{$desktop} {
+    @include desktop {
         padding: 10px 10px 10px 10px;
     }
 }
 
 .link {
-    @media #{$tablet} {
+    @include tablet {
         display: inline-block;
         padding-left: 10px;
         padding-right: 10px;
